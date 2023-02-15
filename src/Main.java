@@ -52,7 +52,15 @@ public class Main {
 
     public static void task4 () {
         System.out.println("Задача 4");
-        // Пишем код для задачи 1
+        float salary = 15000f;
+        float total = 0f;
+        int month = 0;
+        while (total <= 12_000_000) {
+            //total = total * 1.07f;
+            total = (total + salary) * 1.07f;
+            month++;
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
+        }
     }
     public static void task5 () {
         System.out.println("Задача 5");
