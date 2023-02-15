@@ -12,7 +12,15 @@ public class Main {
 
     public static void task1 () {
         System.out.println("Задача 1");
-        // Пишем код для задачи 1
+        int salary = 15000;
+        int total = 0;
+        int month = 0;
+        while (total <= 2_459_000) {
+            total = total + total/100;
+            total = total + salary;
+            month++;
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
+        }
     }
 
     public static void task2 () {
