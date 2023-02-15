@@ -68,7 +68,6 @@ public class Main {
         float total = 0f;
         int month = 0;
         while (total <= 12_000_000) {
-            //total = total * 1.07f;
             total = (total + salary) * 1.07f;
             month++;
             if (month % 6 == 0 || month == 59) {
@@ -78,11 +77,22 @@ public class Main {
     }
     public static void task6 () {
         System.out.println("Задача 6");
-        // Пишем код для задачи 1
+        float salary = 7500f;
+        float total = 0f;
+        float month = 0f;
+        while (month < 9) {
+            total = (total + salary) * 1.07f;
+            month += 0.5;
+                System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
+        }
     }
     public static void task7 () {
         System.out.println("Задача 7");
-        // Пишем код для задачи 1
+        //int month = 31;
+        //int report = 5;
+        for (int report = 5; report < 31; report += 7) {
+            System.out.println("Сегодня пятница, " + report + "-е число. Необходимо подготовить отчет");
+        }
     }
     public static void task8 () {
         System.out.println("Задача 8");
