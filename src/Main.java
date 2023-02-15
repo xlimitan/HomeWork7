@@ -25,8 +25,17 @@ public class Main {
 
     public static void task2 () {
         System.out.println("Задача 2");
-        // Пишем код для задачи 2
-    }
+        int i = 0;
+        while (i < 10) {
+            i++;
+            System.out.print(i + " ");
+        }
+        System.out.println();
+            for (i = 10; i >= 1; i--) {
+                System.out.print(i + " ");
+            }
+        System.out.println();
+        }
     public static void task3 () {
         System.out.println("Задача 3");
         // Пишем код для задачи 1
