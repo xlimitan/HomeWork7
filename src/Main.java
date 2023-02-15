@@ -50,7 +50,7 @@ public class Main {
         }
     }
 
-    public static void task4 () {
+    public static void task4() {
         System.out.println("Задача 4");
         float salary = 15000f;
         float total = 0f;
@@ -62,7 +62,8 @@ public class Main {
             System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
         }
     }
-    public static void task5 () {
+
+    public static void task5() {
         System.out.println("Задача 5");
         float salary = 15000f;
         float total = 0f;
@@ -75,7 +76,8 @@ public class Main {
             }
         }
     }
-    public static void task6 () {
+
+    public static void task6() {
         System.out.println("Задача 6");
         float salary = 7500f;
         float total = 0f;
@@ -83,19 +85,22 @@ public class Main {
         while (month < 9) {
             total = (total + salary) * 1.07f;
             month += 0.5;
-                System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
         }
     }
-    public static void task7 () {
+
+    public static void task7() {
         System.out.println("Задача 7");
-        //int month = 31;
-        //int report = 5;
         for (int report = 5; report < 31; report += 7) {
             System.out.println("Сегодня пятница, " + report + "-е число. Необходимо подготовить отчет");
         }
     }
-    public static void task8 () {
+
+    public static void task8() {
         System.out.println("Задача 8");
-        // Пишем код для задачи 1
+        for (int i = 0; i < 2123; i += 79)
+            if (i >= 1823) {
+                System.out.println(i);
+            }
     }
 }
