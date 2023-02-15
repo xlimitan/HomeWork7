@@ -10,20 +10,20 @@ public class Main {
         task8();
     }
 
-    public static void task1 () {
+    public static void task1() {
         System.out.println("Задача 1");
         int salary = 15000;
         int total = 0;
         int month = 0;
         while (total <= 2_459_000) {
-            total = total + total/100;
+            total = total + total / 100;
             total = total + salary;
             month++;
             System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
         }
     }
 
-    public static void task2 () {
+    public static void task2() {
         System.out.println("Задача 2");
         int i = 0;
         while (i < 10) {
@@ -31,15 +31,25 @@ public class Main {
             System.out.print(i + " ");
         }
         System.out.println();
-            for (i = 10; i >= 1; i--) {
-                System.out.print(i + " ");
-            }
-        System.out.println();
+        for (i = 10; i >= 1; i--) {
+            System.out.print(i + " ");
         }
-    public static void task3 () {
-        System.out.println("Задача 3");
-        // Пишем код для задачи 1
+        System.out.println();
     }
+
+    public static void task3() {
+        System.out.println("Задача 3");
+        int y = 12_000_000;
+        int year = 0;
+        int live = y / 1000 * 17;
+        int dead = y / 1000 * 8;
+        int size = y + (live - dead);
+        while (year < 10) {
+            year++;
+            System.out.println("Год " + year + ", численность населения составляет " + size);
+        }
+    }
+
     public static void task4 () {
         System.out.println("Задача 4");
         // Пишем код для задачи 1
