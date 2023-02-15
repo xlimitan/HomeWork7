@@ -64,7 +64,17 @@ public class Main {
     }
     public static void task5 () {
         System.out.println("Задача 5");
-        // Пишем код для задачи 1
+        float salary = 15000f;
+        float total = 0f;
+        int month = 0;
+        while (total <= 12_000_000) {
+            //total = total * 1.07f;
+            total = (total + salary) * 1.07f;
+            month++;
+            if (month % 6 == 0 || month == 59) {
+                System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
+            }
+        }
     }
     public static void task6 () {
         System.out.println("Задача 6");
